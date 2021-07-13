@@ -1,6 +1,6 @@
 {{ friendModel | json }}
 
-<form #formName="ngForm">
+<form #formName="ngForm" novalidate>
   <label>First Name</label><br />
   <input
     required
@@ -9,7 +9,9 @@
     placeholder="First name"
     name="firstname"
     #inputName="ngModel"
-  /><br />
+  />
+
+  <br />
   <label>Last Name</label><br />
   <input
     required
@@ -32,6 +34,8 @@
   <input
     required
     pattern="^[0-9]*[1-9][0-9]*$"
+    minlength="10"
+    maxlength="10"
     [(ngModel)]="friendModel.telephone"
     placeholder="0123456789"
     #inputName="ngModel"
@@ -44,5 +48,7 @@
     </option>
   </select>
   <br />
-  <button type="submit" id="button">Submit</button>
+  <button type="submit" id="button" [disabled]="!formName.form.valid">
+    Submit
+  </button>
 </form>
