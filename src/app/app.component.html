@@ -1,0 +1,48 @@
+{{ friendModel | json }}
+
+<form #formName="ngForm">
+  <label>First Name</label><br />
+  <input
+    required
+    [(ngModel)]="friendModel.firstName"
+    text="text"
+    placeholder="First name"
+    name="firstname"
+    #inputName="ngModel"
+  /><br />
+  <label>Last Name</label><br />
+  <input
+    required
+    [(ngModel)]="friendModel.lastName"
+    text="text"
+    placeholder="Last name"
+    name="lastname"
+    #inputName="ngModel"
+  /><br />
+  <label>Email</label><br />
+  <input
+    required
+    [(ngModel)]="friendModel.email"
+    text="email"
+    placeholder="Email-adress"
+    name="email"
+    #inputName="ngModel"
+  /><br />
+  <label>Phone number</label><br />
+  <input
+    required
+    pattern="^[0-9]*[1-9][0-9]*$"
+    [(ngModel)]="friendModel.telephone"
+    placeholder="0123456789"
+    #inputName="ngModel"
+    name="telephone"
+  /><br />
+  <label>Favourite language</label><br />
+  <select>
+    <option *ngFor="let language of languageOptions">
+      {{ language }}
+    </option>
+  </select>
+  <br />
+  <button type="submit" id="button">Submit</button>
+</form>

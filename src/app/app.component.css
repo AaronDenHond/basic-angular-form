@@ -1,0 +1,8 @@
+input.ng-dirty.ng-invalid {
+  border-color: red;
+  color: red;
+}
+
+.error {
+  color: rgb(11, 179, 11);
+}
