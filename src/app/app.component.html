@@ -1,6 +1,6 @@
 {{ friendModel | json }}
 
-<form #formName="ngForm" novalidate>
+<form #formName="ngForm" (ngSubmit)="userData()" novalidate>
   <label>First Name</label><br />
   <input
     required
@@ -42,8 +42,13 @@
     name="telephone"
   /><br />
   <label>Favourite language</label><br />
-  <select>
-    <option *ngFor="let language of languageOptions">
+  <select
+    required
+    [(ngModel)]="friendModel.language"
+    #inputName="ngModel"
+    name="language"
+  >
+    <option *ngFor="let language of languageOptions" [value]="language">
       {{ language }}
     </option>
   </select>

@@ -9,4 +9,7 @@ import { Friend } from './friend';
 export class AppComponent {
   languageOptions = ['PHP', 'Javascript', 'C', 'Java', 'Ruby'];
   friendModel = new Friend('', '', '', 0, '');
+  userData() {
+    console.log(this.friendModel);
+  }
 }
