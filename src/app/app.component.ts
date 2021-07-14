@@ -22,6 +22,3 @@ export class AppComponent {
       );
   }
 }
-
-//In your app.component.ts also import your service and make a constructor in the component class.
-//Add a private "addFriendService" property and typehint it.

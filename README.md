@@ -1,27 +1,26 @@
-# ProjectName
+# Basic Angular Form
+
+This project was made as an exercise for Becode Antwerp as an introduction to Angular.
+
+
+Start the entire project with ng serve.
+
+To start the node server and see all added friends, run the command node server in the CLI 
+when cd'd into the server directory. Surf to localhost:9020/addedFriends
+
+Current functionality : saving form input data to localhost:9020/addedFriends
+It currently loses the stored data and works like a session.
+
+
+
+Overall current thoughts on the projects and Angular :
+
+Angular is very confusing to me compared to React. While both of these have a learning curve
+and I struggle with them, React just makes more sense organically to me. 
+The whole predetermined structure while only working in a few files was very annoying and 
+confusing to navigate for me. The steps for the exercise were doable for me until I started struggling
+around steps 15 and 16. 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
