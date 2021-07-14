@@ -1,6 +1,6 @@
 {{ friendModel | json }}
 
-<form #formName="ngForm" (ngSubmit)="userData()" novalidate>
+<form #formName="ngForm" (ngSubmit)="onSubmit()" novalidate>
   <label>First Name</label><br />
   <input
     required
